@@ -20,7 +20,7 @@ public class UserStorageTest {
     @Test
     public void shouldStoreUser() {
         // Given
-        UserStorage storage = new UserStorage();
+        UserStorageInMemory storage = new UserStorageInMemory();
 
         // When
         storage.storeUser(new User(NAME, SURENAME, EMAIL, WEBPAGE));
@@ -39,7 +39,7 @@ public class UserStorageTest {
     @Test
     public void shouldStoreUsers() {
         // Given
-        UserStorage storage = new UserStorage();
+        UserStorageInMemory storage = new UserStorageInMemory();
 
         // When
         storage.storeUser(new User(NAME, SURENAME, EMAIL, WEBPAGE));
